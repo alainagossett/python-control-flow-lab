@@ -108,17 +108,17 @@
 
 # Hint: The next number is found by adding the two numbers before it
 
-num1 = 0
-num2 = 1
-term = 0
+# num1 = 0
+# num2 = 1
+# term = 0
 
-while term < 50:
-  fibonacci = num1 + num2
-  num1 = num2
-  num2 = fibonacci
-  term += 1
+# while term < 50:
+#   fibonacci = num1 + num2
+#   num1 = num2
+#   num2 = fibonacci
+#   term += 1
 
-  print(f'term: {term} / number: {fibonacci}')
+#   print(f'term: {term} / number: {fibonacci}')
 
 
 
@@ -143,3 +143,26 @@ while term < 50:
 #
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
+
+month = input('Enter the month of the season (Jan - Dec): ')[0: 3].lower()
+day = int(input('Enter the day of the month: '))
+
+if month in ('jan', 'feb', 'marc'):
+  season = 'Winter'
+elif month in ('apr', 'may', 'jun'):
+  season = 'Spring'
+elif month in ('jul', 'aug', 'sep'):
+  season = 'Summer'
+else:
+  season = 'Fall'
+
+if(month == 'mar') and (day > 19):
+  season = 'Spring'
+elif(month == 'jun') and (day > 20):
+  season = 'Summer'
+elif(month == 'sep') and (day > 21):
+  season = 'Fall'
+elif(month == 'dec') and (day > 20):
+  season = 'Winter'
+
+print('Season is: ', season)
