@@ -11,11 +11,17 @@
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 
-letter = None
+# letter = None
 
-letter = input('Enter a letter: ').lower()
-print(f'The user entered {letter}')
+# letter = input('Enter a letter: ').lower()
+# print(f'The user entered {letter}')
 
+# vowels = ["a", "e", "i", "o", "u"]
+
+# if letter in vowels:
+#   print(f'The letter {letter} is a vowel')
+# else:
+#   print(f'The letter {letter} is a consonant')
 
 
 # exercise-02 Length of Phrase
@@ -27,6 +33,11 @@ print(f'The user entered {letter}')
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
+# phrase = None
+
+# while phrase != 'quit':
+#   phrase = input('Please enter a word or phrase: ').lower()
+#   print('The length of phrase is: ', len(phrase))
 
 
 # exercise-03 Calculate Dog Years
@@ -41,6 +52,18 @@ print(f'The user entered {letter}')
 #      The dog's age in dog years is xx
 
 # Hint:  Use the int() function to convert the string returned from input() into an integer
+
+dog_years = None
+
+dog_years = int(input("Enter a dog's age in human years: "))
+if dog_years < 0:
+  print('Age must be a positive number')
+elif dog_years <=2:
+  dog_years = dog_years * 10
+  print(f"The dog's age in dog years is {dog_years}")
+else:
+  dog_years = 20 + (dog_years - 2) * 7
+  print(f"The dog's age in dog years is {dog_years}")
 
 
 # exercise-04 What kind of Triangle?
