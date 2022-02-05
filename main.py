@@ -53,17 +53,17 @@
 
 # Hint:  Use the int() function to convert the string returned from input() into an integer
 
-dog_years = None
+# dog_years = None
 
-dog_years = int(input("Enter a dog's age in human years: "))
-if dog_years < 0:
-  print('Age must be a positive number')
-elif dog_years <=2:
-  dog_years = dog_years * 10
-  print(f"The dog's age in dog years is {dog_years}")
-else:
-  dog_years = 20 + (dog_years - 2) * 7
-  print(f"The dog's age in dog years is {dog_years}")
+# dog_years = int(input("Enter a dog's age in human years: "))
+# if dog_years < 0:
+#   print('Age must be a positive number')
+# elif dog_years <=2:
+#   dog_years = dog_years * 10
+#   print(f"The dog's age in dog years is {dog_years}")
+# else:
+#   dog_years = 20 + (dog_years - 2) * 7
+#   print(f"The dog's age in dog years is {dog_years}")
 
 
 # exercise-04 What kind of Triangle?
@@ -81,7 +81,16 @@ else:
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
-
+# print('Enter the lengths of three sides of a triangle: ')
+# a = input('a: ')
+# b = input('b: ')
+# c = input('c: ')
+# if a == b and a == c:
+#   print('This is an equilateral triangle')
+# elif a == b or a == c:
+#   print('This is an isosceles triangle')
+# else:
+#   print('This is a scalene triangle')
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
@@ -99,7 +108,17 @@ else:
 
 # Hint: The next number is found by adding the two numbers before it
 
+num1 = 0
+num2 = 1
+term = 0
 
+while term < 50:
+  fibonacci = num1 + num2
+  num1 = num2
+  num2 = fibonacci
+  term += 1
+
+  print(f'term: {term} / number: {fibonacci}')
 
 
 
